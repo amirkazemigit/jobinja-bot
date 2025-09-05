@@ -23,4 +23,4 @@ jobs:
         run: python bot.py
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TE
+          
