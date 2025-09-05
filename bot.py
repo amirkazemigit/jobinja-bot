@@ -1,8 +1,8 @@
 import os, requests, json, time
 from bs4 import BeautifulSoup
 
-TOKEN = os.getenv("TELEGRAM_TOKEN")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")  # @channelusername یا -100...
+TOKEN = os.getenv("8254554742:AAFgBihgyEHXHjx2IA0ndmta_kHsgqEtPUU")
+CHAT_ID = os.getenv("@karopeydakon")  # @channelusername یا -100...
 SEEN_FILE = "seen.json"
 
 URL = "https://jobinja.ir/jobs?filters%5Bkeywords%5D%5B0%5D=python"  # جستجو برای Python
