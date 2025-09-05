@@ -13,7 +13,7 @@ def main():
     try:
         r = requests.post(url, data=data, timeout=20)
         print("Status:", r.status_code)
-        print("Response:", r.text)   # ← این خط جواب دقیق تلگرام رو نشان می‌دهد
+        print("Response:", r.text)   # جواب کامل تلگرام
         r.raise_for_status()
     except Exception as e:
         print("EXCEPTION:", repr(e))
