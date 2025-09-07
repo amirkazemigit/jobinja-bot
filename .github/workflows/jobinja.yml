@@ -2,7 +2,7 @@ name: Jobinja Bot
 
 on:
   schedule:
-    - cron: "0 * * * *"   # هر ساعت
+    - cron: "0 * * * *" # هر ساعت
   workflow_dispatch:
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run bot
-        run: python bot.py
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python bot.py
